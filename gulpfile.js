@@ -86,10 +86,11 @@ gulp.task('clean', function(){
 	return del.sync(config.dest.root);
 });
 
-gulp.task('default', ['browser-sync', 'nunjucks', 'scss', 'js'], function() {
+gulp.task('default', ['browser-sync', 'nunjucks', 'scss', 'js', 'img'], function() {
 	gulp.watch(config.src.html + '**/*.html', ['nunjucks', browserSync.reload]);
 	gulp.watch(config.src.sass + '**/*.scss', ['scss', browserSync.reload]);
 	gulp.watch(config.src.js + '**/*.js', ['js', browserSync.reload]);
+	gulp.watch(config.src.img + 'img/*.*', ['img', browserSync.reload]);
 	
 });
 
