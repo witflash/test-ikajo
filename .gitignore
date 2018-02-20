@@ -1,0 +1,6 @@
+node_modules/
+docs_frontend_text_task/
+
+.DS_Store
+package-lock.json
+docs/_config.yml
