@@ -399,4 +399,6 @@ template {
   text-align: center; }
 
 .header {
-  background-color: #0b5285; }
+  background-color: #2ba3c3;
+  background: -webkit-gradient(linear, left top, right top, from(#084a7c), to(#2ba3c3));
+  background: linear-gradient(to right, #084a7c, #2ba3c3); }

@@ -1,3 +1,4 @@
 .header {
-    background-color: #0b5285;
+    background-color: $color-grad-end;
+    background: linear-gradient(to right, $color-grad-start, $color-grad-end);
 }
