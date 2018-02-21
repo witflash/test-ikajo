@@ -1,0 +1,48 @@
+.form {
+	display: block;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 auto;
+	padding: 3em 10%;
+	background-color: $color-text-secondary;
+	border-radius: 5px;
+	box-shadow: 5px 10px 25px 2px rgba(0, 0, 0, 0.2);
+	
+	&__input {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 2.5em;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.7em 1em;
+		border: 1px solid $color-text-form;
+		border-radius: 5px;
+
+		@include placeholder {
+			font-family: $font-primary;
+			font-size: $font-main;
+			color: $color-text-form;
+		}
+
+		font-family: $font-primary;
+		font-size: $font-main;
+		color: $color-secondary;
+
+		&:focus {
+			border-color: $color-secondary;
+			outline: none;
+		}
+
+		// &::after {
+		// 	content: '';
+		// 	display: table;
+		// 	clear: both;
+		// }
+	}
+
+	&__button {
+		width: 100%;
+		box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2);
+	}
+
+}

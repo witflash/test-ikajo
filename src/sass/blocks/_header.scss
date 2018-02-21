@@ -1,4 +1,34 @@
 .header {
+    padding-bottom: -20em;
     background-color: $color-grad-end;
     background: linear-gradient(to right, $color-grad-start, $color-grad-end);
+    text-align: center;
+    
+    &__logo {
+        padding: 1.5em;
+        width: 200px * 0.8;
+        transition-duration: $delay-global;
+    }
+    
+    &__title {
+        padding: 0 1em;
+        font-family: $font-secondary;
+        font-size: $font-title * 0.8;
+        color: $color-text-secondary;
+    }
+    
+    &__subtitle {
+        margin: 0;
+        padding: 0 1em;        
+        padding-bottom: 13em;
+        font-size: $font-subtitle;
+        color: $color-text-secondary;
+    }
+
+    &__form {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1080px;
+    }
 }

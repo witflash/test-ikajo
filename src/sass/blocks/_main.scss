@@ -1,0 +1,12 @@
+.main {
+	
+	&__help {
+		margin-top: 16em;
+		text-align: center;
+	}
+
+	&__title {
+		font-family: $font-secondary;
+		font-size: $font-title;
+	}
+}

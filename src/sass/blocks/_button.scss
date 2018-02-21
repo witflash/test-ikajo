@@ -1,0 +1,23 @@
+.button {
+	padding: 0.7em;
+	box-sizing: border-box;
+	background-color: $color-secondary;
+	border: none;
+	border-radius: 5px;
+
+	font-family: $font-secondary;
+	font-size: $font-main;
+	color: $color-text-secondary;
+
+	transition-duration: $delay-global;
+
+	&:focus {
+		outline: none;
+		background-color: $color-accent;
+	}
+
+	&:hover {
+		cursor: pointer;
+		background-color: $color-accent;
+	}
+}

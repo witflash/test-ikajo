@@ -15,21 +15,19 @@
 
 	<header class="header">
 
-    <div class="header__logo">
-        <img src="img/logo_tripplepay.svg" alt="TripplePay Logo" width="200">
-    </div>
+    <img src="img/logo_tripplepay.svg" alt="TripplePay Logo" class="header__logo">
     <h1 class="header__title">Betting, lottery or gambling business?<br>No problem! We're real pros at this!</h1>
     <p class="header__subtitle">We'll help you start processing and keep you in the business.</p>
 
+    <form action="/" id="form-start" class="form header__form">
+        <input type="text" placeholder="Name" class="form__input">
+        <input type="email" placeholder="Email" class="form__input">
+        <input type="text" placeholder="Site URL" class="form__input">
+        <button type="submit" class="button form__button">Get started!</button>
+    </form>
+
 </header>
 	<section class="main">
-
-    <form action="/" class="form main__form">
-        <input type="text" class="form__name">
-        <input type="email" class="form__email">
-        <input type="text" class="form__site">
-        <button type="button" class="button form__button">Get started!</button>
-    </form>
 
     <div class="main__help">
         <h2 class="main__title">How to open a high-risk merchant account</h2>
@@ -58,6 +56,10 @@
 
     </div>
 
+</section>
+
+    <footer class="footer">
+
     <div class="slick main__slick">
         <button class="slick__button">&lt;</button>
         <img src="img/slick_visa.png" alt="VISA" class="slick__img">
@@ -70,16 +72,13 @@
         <img src="img/slick_jsb.png" alt="JSB" class="slick__img">
         <img src="img/slick_mastercard-secure.png" alt="Mastercard SecureCode" class="slick__img">
         <img src="img/slick_unionpay.png" alt="Unionpay" class="slick__img">
+        <img src="img/slick_visa-verified.png" alt="Verified by VISA" class="slick__img">
 
         <button class="slick__button">&gt;</button>
     </div>
 
-</section>
-
-    <footer class="footer">
-
 	<h2 class="footer__title">Take the first toward successful payment processing now!</h2>
-	<button class="button footer__button"></button>
+	<a href="#form-start" class="button footer__button">Apply now!</a>
 
 	<div class="footer__bottom">
 		<a href="#" class="footer__link">Privacy Policy</a>

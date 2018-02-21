@@ -387,6 +387,9 @@ template {
 
 /* FONT VARIABLES */
 /* COLOR VARIABLES */
+body {
+  margin: 0; }
+
 .page {
   font-family: "Open Sans Light", sans-serif;
   font-size: 18px; }
@@ -397,6 +400,112 @@ template {
   text-align: center; }
 
 .header {
+  padding-bottom: -20em;
   background-color: #2ba3c3;
   background: -webkit-gradient(linear, left top, right top, from(#084a7c), to(#2ba3c3));
-  background: linear-gradient(to right, #084a7c, #2ba3c3); }
+  background: linear-gradient(to right, #084a7c, #2ba3c3);
+  text-align: center; }
+  .header__logo {
+    padding: 1.5em;
+    width: 160px;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms; }
+  .header__title {
+    padding: 0 1em;
+    font-family: "Open Sans Bold", sans-serif;
+    font-size: 32px;
+    color: #ffffff; }
+  .header__subtitle {
+    margin: 0;
+    padding: 0 1em;
+    padding-bottom: 13em;
+    font-size: 20px;
+    color: #ffffff; }
+  .header__form {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 1080px; }
+
+.form {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 10%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 10px 25px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 10px 25px 2px rgba(0, 0, 0, 0.2); }
+  .form__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.7em 1em;
+    border: 1px solid #9d9d9c;
+    border-radius: 5px;
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 18px;
+    color: #0099df; }
+    .form__input.placeholder {
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 18px;
+      color: #9d9d9c; }
+    .form__input:-moz-placeholder {
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 18px;
+      color: #9d9d9c; }
+    .form__input:-ms-input-placeholder {
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 18px;
+      color: #9d9d9c; }
+    .form__input::-moz-placeholder {
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 18px;
+      color: #9d9d9c; }
+    .form__input::-webkit-input-placeholder {
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 18px;
+      color: #9d9d9c; }
+    .form__input:focus {
+      border-color: #0099df;
+      outline: none; }
+  .form__button {
+    width: 100%;
+    -webkit-box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2); }
+
+.button {
+  padding: 0.7em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0099df;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms; }
+  .button:focus {
+    outline: none;
+    background-color: #124fb3; }
+  .button:hover {
+    cursor: pointer;
+    background-color: #124fb3; }
+
+.main__help {
+  margin-top: 16em;
+  text-align: center; }
+
+.main__title {
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 40px; }
+
+.step__image {
+  height: 100px; }
