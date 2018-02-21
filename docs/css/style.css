@@ -502,9 +502,7 @@ body {
       border-color: #0099df;
       outline: none; }
   .form__button {
-    width: 100%;
-    -webkit-box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2);
-            box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2); }
+    width: 100%; }
 
 .button {
   padding: 0.7em;
@@ -513,9 +511,12 @@ body {
   background-color: #0099df;
   border: none;
   border-radius: 5px;
+  -webkit-box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 22px 2px rgba(0, 0, 0, 0.2);
   font-family: "Open Sans Bold", sans-serif;
   font-size: 18px;
   color: #ffffff;
+  text-decoration: none;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms; }
   .button:focus {
@@ -524,9 +525,13 @@ body {
   .button:hover {
     cursor: pointer;
     background-color: #124fb3; }
+  .button_apply {
+    padding-left: 4em;
+    padding-right: 4em; }
 
 .main__help {
   margin-top: 16em;
+  margin-bottom: 8em;
   text-align: center; }
 
 .main__title {
@@ -541,3 +546,60 @@ body {
   .step__title {
     font-family: "Open Sans Bold", sans-serif;
     font-size: 20px; }
+
+.footer {
+  position: relative;
+  text-align: center; }
+  .footer__top {
+    position: relative;
+    padding-bottom: 10em;
+    background-color: #2ba3c3;
+    background: -webkit-gradient(linear, left top, right top, from(#084a7c), to(#2ba3c3));
+    background: linear-gradient(to right, #084a7c, #2ba3c3); }
+  .footer__wave {
+    position: absolute;
+    width: 100%;
+    height: 100px; }
+  .footer__wave_updown {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .footer__wave_bottom {
+    bottom: 4.5em; }
+  .footer__title {
+    margin: 0;
+    padding: 5em 1em 2em 1em;
+    font-family: "Open Sans Bold", sans-serif;
+    font-size: 32px;
+    color: #ffffff; }
+  .footer__button {
+    display: inline-block; }
+  .footer__slick {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 1080px;
+    height: 160px;
+    z-index: 1;
+    overflow: hidden; }
+  .footer__bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 1em;
+    z-index: 2;
+    background-color: #182a53;
+    font-size: 0.9em;
+    color: #ffffff; }
+  .footer__links {
+    margin-bottom: 1em; }
+  .footer__link {
+    display: inline-block;
+    margin-right: 3em;
+    font-size: 0.9em;
+    color: inherit; }
+    .footer__link:last-child {
+      margin-right: 0; }
+  .footer__copyright {
+    margin: 0;
+    font-size: 0.65em; }
