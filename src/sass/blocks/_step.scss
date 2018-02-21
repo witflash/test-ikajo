@@ -1,10 +1,13 @@
 .step {
+	max-width: 13em;
+	margin: 0 auto;
 
 	&__image {
 		height: 100px;
 	}
 
-	&__caption {
-		// max-width: 1em;
+	&__title {
+		font-family: $font-secondary;
+		font-size: $font-subtitle;
 	}
 }
