@@ -1,21 +1,13 @@
 @font-face { 
   font-family: 'Open Sans Light'; 
-  src: url('../fonts/OpenSans-Light-webfont.eot');
-  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
-       url('../fonts/OpenSans-Light-webfont.ttf')  format('truetype'),
-       url('../fonts/OpenSans-Light-webfont.svg#svgFontName') format('svg');    
+  src: url('../fonts/OpenSans-Light-webfont.woff') format('woff');
   font-weight: normal; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: 'Open Sans Bold'; 
-  src: url('../fonts/OpenSans-Bold-webfont.eot');
-  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
-       url('../fonts/OpenSans-Bold-webfont.ttf')  format('truetype'),
-       url('../fonts/OpenSans-Bold-webfont.svg#svgFontName') format('svg');    
+  src: url('../fonts/OpenSans-Bold-webfont.woff') format('woff');
   font-weight: normal; 
   font-style: normal; 
 }
