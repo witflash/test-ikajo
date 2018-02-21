@@ -20,7 +20,7 @@
     }
 
     &__wave_bottom {
-        bottom: 4.5em;
+        bottom: 3em;
     }
 
 	&__title {
@@ -67,9 +67,15 @@
 		margin-right: 3em;
 		font-size: 0.9em;
 		color: inherit;
+		transition-duration: $delay-global;
 
 		&:last-child {
 			margin-right: 0;
+		}
+
+		&:hover {
+			color: $color-accent;
+			text-decoration: none;
 		}
 	}
 

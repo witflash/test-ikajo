@@ -564,7 +564,7 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
   .footer__wave_bottom {
-    bottom: 4.5em; }
+    bottom: 3em; }
   .footer__title {
     margin: 0;
     padding: 5em 1em 2em 1em;
@@ -597,9 +597,14 @@ body {
     display: inline-block;
     margin-right: 3em;
     font-size: 0.9em;
-    color: inherit; }
+    color: inherit;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms; }
     .footer__link:last-child {
       margin-right: 0; }
+    .footer__link:hover {
+      color: #124fb3;
+      text-decoration: none; }
   .footer__copyright {
     margin: 0;
     font-size: 0.65em; }
