@@ -12,3 +12,28 @@
     &::-moz-placeholder { @content; }
     &::-webkit-input-placeholder { @content; }
 }
+
+@mixin clearfix {
+    @content;
+    &::after {
+    content: '';
+    display: table;
+    clear: both;
+    }
+}
+
+@mixin phablet {
+    @media (min-width: $phablet-width) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}

@@ -23,6 +23,14 @@
         padding: 1.5em;
         width: 200px * 0.8;
         transition-duration: $delay-global;
+
+        @include tablet {
+            width: 200px * 0.9;
+        }
+
+        @include desktop {
+            width: 200px;
+        }
     }
     
     &__title {
@@ -30,6 +38,19 @@
         font-family: $font-secondary;
         font-size: $font-title * 0.8;
         color: $color-text-secondary;
+        transition-duration: $delay-global;
+
+        @include phablet {
+            margin-top: 1em;
+        }
+
+        @include tablet {
+            font-size: $font-title * 0.9;            
+        }
+
+        @include desktop {
+            font-size: $font-title;            
+        }
     }
     
     &__subtitle {
@@ -38,21 +59,36 @@
         padding-bottom: 13em;
         font-size: $font-subtitle;
         color: $color-text-secondary;
+        transition-duration: $delay-global;        
+
+        @include phablet {
+            padding-bottom: 16em;
+        }
+
+        @include tablet {
+            padding-bottom: 10em;
+        }
+
+        @include desktop {
+            padding-bottom: 12em;
+        }
     }
 
     &__form {
         position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(50%, -50%);
+        right: 50%;
         max-width: 1080px;
         z-index: 1;
+
+        transition-duration: $delay-global;
     }
 
-    &__bottom {
+    &::after {
+        content: url('../img/bg_wave.svg');
         display: block;
         position: absolute;
-        height: 50px;
         width: 100%;
-        transform: translate(0, -50%);
+        bottom: -10px;
     }
 }

@@ -18,5 +18,10 @@ $color-footer:          #182a53;
 $color-grad-start:      #084a7c;
 $color-grad-end:        #2ba3c3;
 
-// TRANSITIONS AND ANIMATIONS
+/* TRANSITIONS AND ANIMATIONS */
 $delay-global: 300ms;
+
+/* BREAKPOINTS */
+$phablet-width: '578px';
+$tablet-width: '768px';
+$desktop-width: '1024px';
