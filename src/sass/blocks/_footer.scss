@@ -50,7 +50,7 @@
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		padding: 1em 1em;
+		padding: 0.5em 1em;
 		z-index: 2;
 		background-color: $color-footer;
 
@@ -59,7 +59,7 @@
 	}
 	
 	&__links {
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 	}
 
 	&__link {

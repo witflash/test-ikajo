@@ -586,13 +586,13 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 1em 1em;
+    padding: 0.5em 1em;
     z-index: 2;
     background-color: #182a53;
     font-size: 0.9em;
     color: #ffffff; }
   .footer__links {
-    margin-bottom: 1em; }
+    margin-bottom: 0.5em; }
   .footer__link {
     display: inline-block;
     margin-right: 3em;
