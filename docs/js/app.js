@@ -146,6 +146,7 @@
     };
 
 }(jQuery));
+/* SLICK Slider */
 $(document).ready(function() {
   $('.slick').slick({
 		adaptiveHeight: false,
@@ -190,6 +191,7 @@ $(document).ready(function() {
   });
 });
 
+/* Waves bottom */
 $('.feel-the-wave').each( function(index, el) {
 	$(el).wavify({
 	  height: 50,
@@ -198,9 +200,10 @@ $('.feel-the-wave').each( function(index, el) {
 		color: 'rgba(255, 255, 255, 0.05)',
 	  speed: .1
 	});
-  });
-  
-  $('.feel-the-wave-two').each( function(index, el) {
+});
+ 
+/* Waves top */
+$('.feel-the-wave-two').each( function(index, el) {
 	$(el).wavify({
 	  height: 40,
 	  bones: 4,
@@ -208,4 +211,14 @@ $('.feel-the-wave').each( function(index, el) {
 		color: 'rgba(255, 255, 255, 0.05)',
 	  speed: .1
 	});
-	});
+});
+
+// slow scroll to Form Submit
+$('.js-button-apply').click(function () {
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top;
+		jQuery('html:not(:animated)').animate({
+			scrollTop: destination - 50
+		}, 800);
+		return false;
+});
