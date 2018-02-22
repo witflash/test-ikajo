@@ -1,7 +1,7 @@
 ;(function () {
     
     function validateForm (e) {
-        var inputs = e.currentTarget.querySelectorAll('input');
+        // var inputs = e.currentTarget.querySelectorAll('input');
         isValide = true;
         e.preventDefault();
         for (var i = 0; i < inputs.length; i++) {
@@ -31,7 +31,8 @@
         console.log('isValide: ', isValide);
         if (isValide) {
             console.log(userInput);
-            alert('Thank you!');
+            formSent.style.display = 'block';
+            formSent.addEventListener('click', hideFormSent);
         }
     };
 
@@ -42,9 +43,21 @@
             item.parentElement.classList.remove(emptyClass);
             item.parentElement.classList.remove(notEmailClass);          
         }
+    };
+
+    function hideFormSent () {
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].value = '';
+            inputs[i].classList.remove(notValideClass);            
+            inputs[i].parentElement.classList.remove(emptyClass);
+        }
+        formSent.style.display = "";
     }
     
     var form = document.getElementById('form-start'),
+        inputs = form.querySelectorAll('input'),
+        formSent = document.querySelector('.js-form-sent'),
+        isHide = 'is-hide',
         userInput = {},
         isValide,
         notValideClass = 'js-not-valide',
