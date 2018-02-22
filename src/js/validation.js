@@ -28,7 +28,6 @@
     };
 
     function submitForm () {
-        console.log('isValide: ', isValide);
         if (isValide) {
             console.log(userInput);
             formSent.style.display = 'block';
