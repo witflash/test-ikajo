@@ -421,8 +421,9 @@ body {
   text-align: center; }
   .header__wave {
     position: absolute;
+    left: 0;
     width: 100%;
-    height: 100px; }
+    height: 50px; }
   .header__wave_updown {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
@@ -739,8 +740,9 @@ body {
         padding-bottom: 8em; } }
   .footer__wave {
     position: absolute;
+    left: 0;
     width: 100%;
-    height: 100px; }
+    height: 50px; }
   .footer__wave_updown {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }

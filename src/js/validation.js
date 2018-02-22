@@ -67,4 +67,4 @@
     form.addEventListener('click', clearField)
     form.addEventListener('submit', validateForm);
 
-}());
+})();
