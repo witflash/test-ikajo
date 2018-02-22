@@ -34,7 +34,9 @@
     }
     
     &__title {
+        margin: 0 auto;
         padding: 0 1em;
+        max-width: 20em;        
         font-family: $font-secondary;
         font-size: $font-title * 0.8;
         color: $color-text-secondary;

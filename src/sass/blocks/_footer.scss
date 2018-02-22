@@ -7,6 +7,15 @@
 		padding-bottom: 10em;
 		background-color: $color-grad-end;
 		background: linear-gradient(to right, $color-grad-start, $color-grad-end);
+		transition-duration: $delay-global;
+
+		@include tablet {
+			padding-bottom: 12em;
+		}
+
+		@include desktop {
+			padding-bottom: 16em;
+		}
 	}
 
 	&__wave {
@@ -20,15 +29,42 @@
     }
 
     &__wave_bottom {
-        bottom: 3em;
+		bottom: 3em;
+		
+		@include phablet {
+			bottom: 3em;
+		}
+
+		@include tablet {
+			bottom: 6.5em;
+		}
+
+		@include desktop {
+			bottom: 9em;
+		}
     }
 
 	&__title {
-		margin: 0;
+		margin: 0 auto;
 		padding: 5em 1em 2em 1em;
+		max-width: 20em;
 		font-family: $font-secondary;
 		font-size: $font-title * 0.8;
 		color: $color-text-secondary;
+		transition-duration: $delay-global;		
+		
+		@include phablet {
+			padding: 6em 1em 1.5em 1em;
+		}
+		
+		@include tablet {
+			padding: 6em 2em 1.5em 2em;
+			font-size: $font-title * 0.9;
+		}
+
+		@include desktop {
+			font-size: $font-title;
+		}
 	}
 
 	&__button {
@@ -54,10 +90,32 @@
 
 		font-size: 0.9em;
 		color: $color-text-secondary;
+
+		transition-duration: $delay-global;		
+
+		@include phablet {
+			font-size: 1em;
+		}
+
+		@include tablet {
+			padding: 2em;
+		}
+
+		@include desktop {
+			padding: 3em;
+		}
 	}
 	
 	&__links {
 		margin-bottom: 0.5em;
+		
+		@include tablet {
+			margin-bottom: 1em;
+		}
+
+		@include desktop {
+			margin-bottom: 1.5em;
+		}
 	}
 
 	&__link {
@@ -71,6 +129,10 @@
 			margin-right: 0;
 		}
 
+		@include desktop {
+			margin-right: 6em;
+		}
+
 		&:hover {
 			color: $color-accent;
 			text-decoration: none;
@@ -80,5 +142,6 @@
 	&__copyright {
 		margin: 0;
 		font-size: 0.65em;
+		transition-duration: $delay-global;		
 	}
 }
