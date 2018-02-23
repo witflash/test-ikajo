@@ -69,9 +69,10 @@
 		});
 		
 		// slow scroll to Form Submit
-		$('.js-button-apply').click(function () {
+		$('.js-button-apply').click(function (e) {
 				var elementClick = $(this).attr("href");
 				var destination = $(elementClick).offset().top;
+				e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 				jQuery('html:not(:animated)').animate({
 					scrollTop: destination - 50
 				}, 800);
