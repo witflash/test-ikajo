@@ -1,7 +1,7 @@
 {
   "name": "test-ikajo",
   "dependencies": {},
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "WitFlash",
   "devDependencies": {
     "browser-sync": "^2.18.13",
