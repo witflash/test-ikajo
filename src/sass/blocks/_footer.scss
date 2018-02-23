@@ -31,18 +31,6 @@
 
     &__wave_bottom {
 		bottom: 0;
-		
-		// @include phablet {
-		// 	bottom: 3em;
-		// }
-
-		// @include tablet {
-		// 	bottom: 6.5em;
-		// }
-
-		// @include desktop {
-		// 	bottom: 9em;
-		// }
     }
 
 	&__title {
@@ -81,12 +69,7 @@
 	}
 	
 	&__bottom {
-		// position: fixed;
-		// bottom: 0;
-		// box-sizing: border-box;
-		// width: 100%;
 		padding: 0.5em 1em;
-		// z-index: 2;
 		background-color: $color-footer;
 
 		font-size: 0.9em;

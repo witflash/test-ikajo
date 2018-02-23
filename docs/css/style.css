@@ -646,8 +646,7 @@ body {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms; }
   .button:focus {
-    outline: none;
-    background-color: #124fb3; }
+    outline: none; }
   .button:hover {
     cursor: pointer;
     background-color: #124fb3; }
